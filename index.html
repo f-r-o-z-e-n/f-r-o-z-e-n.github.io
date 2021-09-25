@@ -4,6 +4,219 @@
   <link href="style.css" rel="stylesheet" type="text/css">
   </head>
   
+  <style>
+    $BG-color: #fefFFf; /*light grey */
+$Face: #f4e1c9; //pink
+$Dark-brown: #76401c;
+$Light-brown: #b9713c;
+$Cheek: #f1ada0;
+$Shadow: #c4a582;
+
+body{
+  background: $BG-color; /*light grey */
+}
+
+.title{
+  text-align: center;
+}
+
+.box{
+  position: relative;
+  margin: auto;
+  display: block;
+  /*optional background or border*/
+  //border: solid 4px red;
+  margin-top: 2%;
+  width: 600px;
+  height: 420px;
+  background: none;
+}
+
+.head{
+  position: absolute;
+  top: 16.5%;
+  left: 25%;
+  width: 52%;
+  height: 60%;
+  background: $Face; 
+  border-radius: 50%; /* To make a circle */
+  z-index: 3;
+}
+.head-copy{
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: $Face;
+  border-radius: 50%;
+  z-index: 2; 
+}
+
+.ear-left-bottom{
+  position: absolute;
+  width: 30%;
+  height: 45%;
+  left: -16%;
+  top: 4%;
+  background: $Dark-brown;
+  border-radius: 45%;
+  z-index: 1;
+}
+.ear-left-upper{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  left: -16%;
+  top: -7%;
+  background: $Dark-brown;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.ear-right-bottom{
+  position: absolute;
+  width: 30%;
+  height: 45%;
+  right: -16%;
+  top: 4%;
+  background: $Light-brown;
+  border-radius: 45%;
+  z-index: 1;
+}
+.ear-right-upper{
+  position: absolute;
+  width: 30%;
+  height: 30%;
+  right: -15%;
+  top: -9%;
+  background: $Light-brown;
+  border-radius: 50%;
+  z-index: 1;
+}
+
+.brow-left{
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  left: 22%;
+  top: 17%;
+  background: $Dark-brown;
+  border-radius: 50%;
+  z-index: 3;
+}
+.brow-right{
+  position: absolute;
+  width: 8%;
+  height: 10%;
+  right: 22%;
+  top: 17%;
+  background: $Light-brown;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.big-eye{
+  position: absolute;
+  width: 30%;
+  height: 45%;
+  left: 15%;
+  top: 23%;
+  background: $Light-brown;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.eye-left{
+  position: absolute;
+  width: 14%;
+  height: 16%;
+  left: 24%;
+  top: 37%;
+  background: #000;
+  border: #fff 7px solid;
+  border-radius: 50%;
+  z-index: 3;
+}
+.eye-right{
+  position: absolute;
+  width: 14%;
+  height: 16%;
+  right: 24%;
+  top: 37%;
+  background: #000;
+  border: #fff 7px solid;
+  border-radius: 50%;
+  z-index: 3;
+}
+
+.pupil{
+  position: absolute;
+  width: 28%;
+  height: 30%;
+  top: 6%;
+  left: 58%;
+  border-radius: 50%;
+  background: #fff;
+}
+
+.cheek-left{
+  position: absolute;
+  width: 26%;
+  height: 32%;
+  left: 14%;
+  top: 55%;
+  background: $Cheek;
+  border-radius: 50%;
+  z-index: 2;
+}
+.cheek-right{
+  position: absolute;
+  width: 26%;
+  height: 32%;
+  right: 14%;
+  top: 55%;
+  background: $Cheek;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+.nose{
+  position: absolute;
+  background: #000;
+  width: 20%;
+  height: 20%;
+  left: 40%;
+  top: 55%;
+  border-radius: 50%;
+  z-index: 4;
+}
+
+.mouth{
+  position: absolute;
+  background: $Dark-brown;
+  width: 32%;
+  height: 20%;
+  left: 36%;
+  top: 85%;
+  border-radius: 50%;
+  z-index: 4;
+
+  -webkit-clip-path: circle(25.4% at 50% 0);
+clip-path: circle(25.4% at 50% 0);
+}
+
+.shadow{
+  position: absolute;
+  background: $Shadow;
+  width: 54%;
+  height: 20%;
+  left: 26%;
+  top: 110%;
+  border-radius: 50%;
+  z-index: 2;
+}
+
+  </style>
+  
 <body>
   <h1 class="title">Cute Animal</h1>
  <!-- Begin Image -->
